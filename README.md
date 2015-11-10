@@ -2,28 +2,18 @@
 
 Configuración pendiente
 
-### What is this repository for? ###
+### Repositorio con el proyecto final de Desarrollo de Software ITM ###
 
-* Quick summary
-* Version
+* Venta de tickets para eventos
+* Version 1.0
 * [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
-### How do I get set up? ###
+### Configuración ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+* Clonar el repositorio
+* COnfigurar GIT o Visual studio 
 
-### Contribution guidelines ###
 
-* Writing tests
-* Code review
-* Other guidelines
+### Encargardo ###
 
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+* yayobyte
