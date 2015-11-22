@@ -21,10 +21,10 @@ namespace libDesarrollo_8_10.Eventos
 
         #region  Attributes
         /*Table attributes*/
-        private int iId;
-        private int iIdCliente;
-        private int iIdEvento;
-        private int iIdTipoBoleto;
+        private Int32 iId;
+        private Int32 iIdCliente;
+        private Int32 iIdEvento;
+        private Int32 iIdTipoBoleto;
 
         /*Local attributes*/
         private string sError;
@@ -34,21 +34,21 @@ namespace libDesarrollo_8_10.Eventos
 
         #region Properties
         /*Table Properties*/
-        public int id {
+        public Int32 id {
             set { iId = value; }
             get { return iId; }
         }
-        public int idCliente {
+        public Int32 idCliente {
             set { iIdCliente = value; }
             get { return iIdCliente; }
         }
 
-        public int idEvento {
+        public Int32 idEvento {
             set { iIdEvento = value; }
             get { return iIdEvento;  }
         }
 
-        public int idTipoBoleto {
+        public Int32 idTipoBoleto {
             set { iIdTipoBoleto = value; }
             get { return iIdTipoBoleto; }
         }
@@ -60,8 +60,8 @@ namespace libDesarrollo_8_10.Eventos
         }
 
         public GridView gridBoleto {
-            set { gridBoleto = value; }
-            get { return gridBoleto; }
+            set { oGridBoleto = value; }
+            get { return oGridBoleto; }
         }
 
         #endregion
@@ -143,6 +143,43 @@ namespace libDesarrollo_8_10.Eventos
                 return false;
             }
         }
+        public bool Consultar()
+        {
+            if (iIdCliente <= 0)
+            {
+                sError = "No definió el nombre para consultar la información";
+                return false;
+            }
+            if (oGridBoleto == null)
+            {
+                sError = "No definió el grid del Boleto";
+                return false;
+            }
+            sSQL = "Execute Boleto_Consultar "+iIdCliente;
+
+            clsGrid oGrid = new clsGrid();
+            //Se pasa el grid vacío
+            oGrid.gridGenerico = oGridBoleto;
+            //se pasa el sql
+            oGrid.SQL = sSQL;
+            if (oGrid.LlenarGridWeb())
+            {
+                oGridBoleto = oGrid.gridGenerico;
+                oGrid = null;
+                return true;
+            }
+            else
+            {
+                sError = oGrid.Error;
+                oGrid = null;
+                return false;
+            }
+
+            
+        }
+
+
+        
 
 
 
