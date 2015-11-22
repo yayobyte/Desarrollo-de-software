@@ -13,3 +13,8 @@ C:\Users\docenteitm\Documents\Desarrollo 8-10\Comunes\libComunes\libComunes\obj\
 C:\Users\docenteitm\Documents\Desarrollo 8-10\Comunes\libComunes\libComunes\bin\Debug\libComunes.dll
 C:\Users\docenteitm\Documents\Desarrollo 8-10\Comunes\libComunes\libComunes\bin\Debug\libComunes.pdb
 C:\Users\docenteitm\Documents\Desarrollo 8-10\Comunes\libComunes\libComunes\obj\Debug\libComunes.pdb
+D:\Documents\Visual Studio 2013\Projects\final-project\Comunes\libComunes\libComunes\bin\Debug\libComunes.dll
+D:\Documents\Visual Studio 2013\Projects\final-project\Comunes\libComunes\libComunes\bin\Debug\libComunes.pdb
+D:\Documents\Visual Studio 2013\Projects\final-project\Comunes\libComunes\libComunes\obj\Debug\libComunes.csprojResolveAssemblyReference.cache
+D:\Documents\Visual Studio 2013\Projects\final-project\Comunes\libComunes\libComunes\obj\Debug\libComunes.dll
+D:\Documents\Visual Studio 2013\Projects\final-project\Comunes\libComunes\libComunes\obj\Debug\libComunes.pdb

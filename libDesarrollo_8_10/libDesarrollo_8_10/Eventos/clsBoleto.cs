@@ -116,6 +116,33 @@ namespace libDesarrollo_8_10.Eventos
                 return false;
             }
         }
+        public bool LlenarGrid()
+        {
+            if (oGridBoleto == null)
+            {
+                sError = "No definió el grid del Boleto";
+                return false;
+            }
+            sSQL = "Execute tblBoleto_Grid";
+
+            clsGrid oGrid = new clsGrid();
+            //Se pasa el grid vacío
+            oGrid.gridGenerico = oGridBoleto;
+            //se pasa el sql
+            oGrid.SQL = sSQL;
+            if (oGrid.LlenarGridWeb())
+            {
+                oGridBoleto = oGrid.gridGenerico;
+                oGrid = null;
+                return true;
+            }
+            else
+            {
+                sError = oGrid.Error;
+                oGrid = null;
+                return false;
+            }
+        }
 
 
 

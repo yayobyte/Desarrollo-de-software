@@ -49,3 +49,10 @@ C:\Users\docenteitm\Documents\Desarrollo_8-10\libDesarrollo_8_10\libDesarrollo_8
 C:\Users\docenteitm\Documents\Desarrollo_8-10\libDesarrollo_8_10\libDesarrollo_8_10\obj\Debug\libDesarrollo_8_10.csprojResolveAssemblyReference.cache
 C:\Users\docenteitm\Documents\Desarrollo_8-10\libDesarrollo_8_10\libDesarrollo_8_10\obj\Debug\libDesarrollo_8_10.dll
 C:\Users\docenteitm\Documents\Desarrollo_8-10\libDesarrollo_8_10\libDesarrollo_8_10\obj\Debug\libDesarrollo_8_10.pdb
+D:\Documents\Visual Studio 2013\Projects\final-project\libDesarrollo_8_10\libDesarrollo_8_10\bin\Debug\libDesarrollo_8_10.dll
+D:\Documents\Visual Studio 2013\Projects\final-project\libDesarrollo_8_10\libDesarrollo_8_10\bin\Debug\libDesarrollo_8_10.pdb
+D:\Documents\Visual Studio 2013\Projects\final-project\libDesarrollo_8_10\libDesarrollo_8_10\bin\Debug\libComunes.dll
+D:\Documents\Visual Studio 2013\Projects\final-project\libDesarrollo_8_10\libDesarrollo_8_10\bin\Debug\libComunes.pdb
+D:\Documents\Visual Studio 2013\Projects\final-project\libDesarrollo_8_10\libDesarrollo_8_10\obj\Debug\libDesarrollo_8_10.csprojResolveAssemblyReference.cache
+D:\Documents\Visual Studio 2013\Projects\final-project\libDesarrollo_8_10\libDesarrollo_8_10\obj\Debug\libDesarrollo_8_10.dll
+D:\Documents\Visual Studio 2013\Projects\final-project\libDesarrollo_8_10\libDesarrollo_8_10\obj\Debug\libDesarrollo_8_10.pdb
