@@ -6,7 +6,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-ALTER PROCEDURE [dbo].[tblBoleto_Actualizar]
+CREATE PROCEDURE [dbo].[tblBoleto_Actualizar]
 
 @pr_Codigo				int,
 @pr_IDCliente			int,

@@ -7,7 +7,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 
-ALTER PROCEDURE [dbo].[tblBoleto_Grabar]
+CREATE PROCEDURE [dbo].[tblBoleto_Grabar]
 
 
 @pr_IDCliente			int,

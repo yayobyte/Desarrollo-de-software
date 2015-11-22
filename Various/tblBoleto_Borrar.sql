@@ -6,7 +6,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-ALTER PROCEDURE [dbo].[tblBoleto_Borrar]
+CREATE PROCEDURE [dbo].[tblBoleto_Borrar]
 
 @pr_Codigo				int
 
