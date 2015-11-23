@@ -54,6 +54,7 @@
                         <li><a runat="server" href="~/Boleto/Evento">Crear Evento</a></li>
                         <li><a runat="server" href="~/Boleto/Boleto">Venta de Boletos</a></li>
                         <li><a runat="server" href="~/Boleto/VentaProveedor">Compras</a></li>
+                        <li><a runat="server" href="~/Boleto/ProveedorPorEvento">Asignar Proveedor</a></li>
                     </ul>
                     
                 </div>
