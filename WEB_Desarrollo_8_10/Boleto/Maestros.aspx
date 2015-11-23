@@ -2,8 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <h1>Maestros</h1>
     <ul class="nav nav-tabs" id="tabs">
-        <li role="presentation" class="active" onclick="changeContent('clientes')" id="clientesLi"><a href="#">Clientes</a></li>
-        <li role="presentation" onclick="changeContent('tipoBoleto')" id="tipoBoletoLi" ><a href="#">Tipo Boleto</a></li>
+        <li role="presentation" onclick="changeContent('tipoBoleto')" id="tipoBoletoLi" class="active"><a href="#">Tipo Boleto</a></li>
         <li role="presentation" onclick="changeContent('tipoArtista')" id="tipoArtistaLi"><a href="#">Tipo Artista</a></li>
         <li role="presentation" onclick="changeContent('artista')" id="artistaLi"><a href="#">Artista</a></li>
     </ul>
@@ -12,13 +11,7 @@
     <div id="masterContent" style="display:none"></div>
 
     <div style="display:none">
-        <div id="clientesContent">
-            <h3>Clientes</h3>
-
-
-            <asp:GridView ID="gridViewCliente" runat="server" ForeColor="#333333" GridLines="None" CssClass="table table-condensed table-bordered table-striped table-hover"></asp:GridView>
-
-        </div>
+        
 
         <div id="tipoBoletoContent">
             <h3>Tipo Boleto</h3>
@@ -37,10 +30,10 @@
     </div>
     <script type="text/javascript">
         var $master = $('#masterContent');
-        $master.html($('#clientesContent').html());
+        $master.html($('#tipoBoletoContent').html());
         $master.show(500);
 
-        var actual = '#clientesLi';
+        var actual = '#tipoBoletoLi';
 
         function changeContent(id) {
             var $id = $('#'+id+'Content');

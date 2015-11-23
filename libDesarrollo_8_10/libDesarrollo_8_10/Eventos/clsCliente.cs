@@ -115,6 +115,57 @@ namespace libDesarrollo_8_10.Eventos
                 return false;
             }
         }
+
+        private bool validar()
+        {
+            
+            if (string.IsNullOrEmpty(sNombre))
+            {
+                sError = "No definió el nombre del cliente";
+                return false;
+            }
+
+            if (string.IsNullOrEmpty(sNombre))
+            {
+                sError = "No definió el nombre del cliente";
+                return false;
+            }
+            
+            return true;
+        }
+
+        public bool Grabar()
+        {
+            if (validar())
+            {
+                clsConexion oConexion = new clsConexion();
+                //Lo unico que se pasa en el SQL es el nombre del procedimiento
+                sSQL = "tblCliente_Grabar";
+
+                oConexion.SQL = sSQL;
+
+                //Se pasan los parámetros
+                //El tamaño de los parámetros "sólo aplica" para los tipo varchar
+                oConexion.AgregarParametro("@pr_Nombre", System.Data.SqlDbType.VarChar, 50, sNombre);
+                oConexion.AgregarParametro("@pr_Correo", System.Data.SqlDbType.VarChar, 50, sCorreo);
+
+                if (oConexion.EjecutarSentencia())
+                {
+                    oConexion = null;
+                    return true;
+                }
+                else
+                {
+                    sError = oConexion.Error;
+                    oConexion = null;
+                    return false;
+                }
+            }
+            else
+            {
+                return false;
+            }
+        }
         #endregion
     }
 }

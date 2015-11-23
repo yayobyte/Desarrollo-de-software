@@ -14,7 +14,7 @@ namespace WEB_Desarrollo_8_10.Boleto
         {
             if (!Page.IsPostBack)
             {
-                LlenarGridCliente();
+                
                 LlenarGridTipoBoleto();
                 LlenarGridTipoArtista();
                 LlenarGridArtista();
@@ -22,19 +22,6 @@ namespace WEB_Desarrollo_8_10.Boleto
 
         }
 
-        private void LlenarGridCliente()
-        {
-
-            clsCliente oCliente = new clsCliente();
-            
-            oCliente.gridCliente = gridViewCliente;
-            if (!oCliente.LlenarGrid())
-            {
-                lblError.Text = oCliente.error;
-            }
-            oCliente = null;
-            
-        }
 
         private void LlenarGridTipoBoleto()
         {

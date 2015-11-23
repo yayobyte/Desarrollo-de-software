@@ -9,7 +9,7 @@
         <p class="lead">Bienvenido al proyecto de compra de tickets, en este software podrá manejar clientes, proveedores y gestionar la venta de tickets,
             eventos, compras a proveedores asi como consultar y eliminar algunas transacciones
         </p>
-        <p><a href="~/Boleto/Evento" class="btn btn-info btn-large">Iniciar</a></p>
+        <p><a href="Boleto/Evento" class="btn btn-info btn-large">Iniciar</a></p>
     </div>
 
     <div class="row">
