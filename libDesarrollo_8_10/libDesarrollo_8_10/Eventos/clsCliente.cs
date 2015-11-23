@@ -19,6 +19,7 @@ namespace libDesarrollo_8_10.Eventos
         /*Local Attributes*/
         private string sError;
         private DropDownList oComboCliente;
+        private GridView oGridCliente;
         private string sSQL;
 
         #endregion
@@ -42,6 +43,12 @@ namespace libDesarrollo_8_10.Eventos
         public DropDownList comboCliente {
             set { oComboCliente = value; }
             get { return oComboCliente; }
+        }
+
+        public GridView gridCliente
+        {
+            set { oGridCliente = value; }
+            get { return oGridCliente; }
         }
 
         public string SQL {
@@ -77,6 +84,34 @@ namespace libDesarrollo_8_10.Eventos
             {
                 sError = oCombo.Error;
                 oCombo = null;
+                return false;
+            }
+        }
+
+        public bool LlenarGrid()
+        {
+            if (oGridCliente == null)
+            {
+                sError = "No definió el grid del Boleto";
+                return false;
+            }
+            sSQL = "Execute tblCliente_Grid";
+
+            clsGrid oGrid = new clsGrid();
+            //Se pasa el grid vacío
+            oGrid.gridGenerico = oGridCliente;
+            //se pasa el sql
+            oGrid.SQL = sSQL;
+            if (oGrid.LlenarGridWeb())
+            {
+                oGridCliente = oGrid.gridGenerico;
+                oGrid = null;
+                return true;
+            }
+            else
+            {
+                sError = oGrid.Error;
+                oGrid = null;
                 return false;
             }
         }
