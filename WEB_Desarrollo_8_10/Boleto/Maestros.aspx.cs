@@ -15,8 +15,9 @@ namespace WEB_Desarrollo_8_10.Boleto
             if (!Page.IsPostBack)
             {
                 LlenarGridCliente();
-                //LlenarComboEvento();
-                //LlenarComboProveedor();
+                LlenarGridTipoBoleto();
+                LlenarGridTipoArtista();
+                LlenarGridArtista();
             }
 
         }
@@ -32,6 +33,48 @@ namespace WEB_Desarrollo_8_10.Boleto
                 lblError.Text = oCliente.error;
             }
             oCliente = null;
+            
+        }
+
+        private void LlenarGridTipoBoleto()
+        {
+
+            clsTipoBoleto oTipoBoleto = new clsTipoBoleto();
+
+            oTipoBoleto.gridTipoBoleto = gridViewTipoBoleto;
+            if (!oTipoBoleto.LlenarGrid())
+            {
+                lblError.Text = oTipoBoleto.error;
+            }
+            oTipoBoleto = null;
+            
+        }
+
+        private void LlenarGridTipoArtista()
+        {
+
+            clsTipoArtista oTipoArtista = new clsTipoArtista();
+
+            oTipoArtista.gridArtista = gridViewTipoArtista;
+            if (!oTipoArtista.LlenarGrid())
+            {
+                lblError.Text = oTipoArtista.error;
+            }
+            oTipoArtista = null;
+
+        }
+
+        private void LlenarGridArtista()
+        {
+
+            clsArtista oArtista = new clsArtista();
+            
+            oArtista.gridArtista = gridViewArtista;
+            if (!oArtista.LlenarGrid())
+            {
+                lblError.Text = oArtista.error;
+            }
+            oArtista = null;
             
         }
     }

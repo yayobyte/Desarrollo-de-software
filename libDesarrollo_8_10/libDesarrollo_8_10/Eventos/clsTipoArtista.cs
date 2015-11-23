@@ -19,6 +19,7 @@ namespace libDesarrollo_8_10.Eventos
         /*Local Attributes*/
         private string sError;
         private DropDownList oComboTipoArtista;
+        private GridView oGridArtista;
         private string sSQL;
         #endregion
 
@@ -44,9 +45,44 @@ namespace libDesarrollo_8_10.Eventos
             get { return oComboTipoArtista; }
         }
 
+        public GridView gridArtista
+        {
+            set { oGridArtista = value; }
+            get { return oGridArtista; }
+        }
+
         #endregion
 
         #region Methods
+
+        public bool LlenarGrid()
+        {
+            if (oGridArtista == null)
+            {
+                sError = "No definió el grid del Boleto";
+                return false;
+            }
+            sSQL = "Execute tblTipoArtista_Grid";
+
+            clsGrid oGrid = new clsGrid();
+            //Se pasa el grid vacío
+            oGrid.gridGenerico = oGridArtista;
+            //se pasa el sql
+            oGrid.SQL = sSQL;
+            if (oGrid.LlenarGridWeb())
+            {
+                oGridArtista = oGrid.gridGenerico;
+                oGrid = null;
+                return true;
+            }
+            else
+            {
+                sError = oGrid.Error;
+                oGrid = null;
+                return false;
+            }
+        }
+
         public bool LlenarCombo()
         {
             if (comboTipoArtista == null)

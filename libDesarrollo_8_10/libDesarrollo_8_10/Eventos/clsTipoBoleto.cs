@@ -19,6 +19,7 @@ namespace libDesarrollo_8_10.Eventos
         /*Local Attributes*/
         private string sError;
         private DropDownList oComboTipoBoleto;
+        private GridView oGridTipoBoleto;
         private string sSQL;
         #endregion
 
@@ -48,9 +49,43 @@ namespace libDesarrollo_8_10.Eventos
             get { return oComboTipoBoleto; }
         }
 
+        public GridView gridTipoBoleto {
+            set { oGridTipoBoleto = value; }
+            get { return oGridTipoBoleto; }
+
+        }
+
         #endregion
 
         #region Methods
+
+        public bool LlenarGrid()
+        {
+            if (oGridTipoBoleto == null)
+            {
+                sError = "No definió el grid del Boleto";
+                return false;
+            }
+            sSQL = "Execute tblTipoBoleto_Grid";
+
+            clsGrid oGrid = new clsGrid();
+            //Se pasa el grid vacío
+            oGrid.gridGenerico = oGridTipoBoleto;
+            //se pasa el sql
+            oGrid.SQL = sSQL;
+            if (oGrid.LlenarGridWeb())
+            {
+                oGridTipoBoleto = oGrid.gridGenerico;
+                oGrid = null;
+                return true;
+            }
+            else
+            {
+                sError = oGrid.Error;
+                oGrid = null;
+                return false;
+            }
+        }
 
         public bool LlenarCombo()
         {
