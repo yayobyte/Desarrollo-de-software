@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Boleto.aspx.cs" Inherits="WEB_Desarrollo_8_10.Boleto.Boleto" %>
+﻿<%@ Page Title="Boletos" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Boleto.aspx.cs" Inherits="WEB_Desarrollo_8_10.Boleto.Boleto" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <h1>Venta de boletos</h1>
     <table class="table">

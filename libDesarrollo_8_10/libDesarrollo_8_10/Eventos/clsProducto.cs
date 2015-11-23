@@ -54,7 +54,7 @@ namespace libDesarrollo_8_10.Eventos
                 sError = "No definió el combo del Producto";
                 return false;
             }
-            sSQL = "Execute tblComboProducto_Combo";
+            sSQL = "Execute tblProducto_Combo";
 
             clsCombos oCombo = new clsCombos();
             oCombo.SQL = sSQL;
