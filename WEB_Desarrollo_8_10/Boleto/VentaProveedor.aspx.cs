@@ -12,9 +12,12 @@ namespace WEB_Desarrollo_8_10.Boleto
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            LlenarGrid();
-            LlenarComboProducto();
-            LlenarComboProveedor();
+            if (!Page.IsPostBack)
+            {
+                LlenarGrid();
+                LlenarComboProducto();
+                LlenarComboProveedor();
+            }
         }
 
         private void LlenarGrid()
