@@ -12,14 +12,17 @@ namespace WEB_Desarrollo_8_10.Boleto
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            txtNombreEvento.Attributes.Add("placeholder", "ej: Feria de las dos ruedas");
-            txtFecha.Attributes.Add("placeholder", "ej: 2015-12-01");
-            txtBuscarEvento.Attributes.Add("placeholder", "Nombre de evento");
-            txtEliminarEvento.Attributes.Add("placeholder", "#de evento");
-            LlenarGrid();
-            LlenarComboArtista();
-            LlenarComboTipoEvento();
-            LlenarComboEstablecimiento();
+            if (!Page.IsPostBack)
+            {
+                txtNombreEvento.Attributes.Add("placeholder", "ej: Feria de las dos ruedas");
+                txtFecha.Attributes.Add("placeholder", "ej: 2015-12-01");
+                txtBuscarEvento.Attributes.Add("placeholder", "Nombre de evento");
+                txtEliminarEvento.Attributes.Add("placeholder", "#de evento");
+                LlenarGrid();
+                LlenarComboArtista();
+                LlenarComboTipoEvento();
+                LlenarComboEstablecimiento();
+            }
         }
         private void LlenarGrid()
         {
