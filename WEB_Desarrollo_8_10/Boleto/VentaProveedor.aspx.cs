@@ -87,17 +87,7 @@ namespace WEB_Desarrollo_8_10.Boleto
         }
         protected void btnConsultar_Click(object sender, EventArgs e)
         {
-            /*
-            clsEvento oEvento = new clsEvento();
-
-            oEvento.nombreEvento = txtBuscarEvento.Text;
-            oEvento.gridEvento = grdEvento;
-            if (!oEvento.Consultar())
-            {
-                lblError.Text = oEvento.error;
-            }
-            oEvento = null;
-             */ 
+            
         }
     }
 }

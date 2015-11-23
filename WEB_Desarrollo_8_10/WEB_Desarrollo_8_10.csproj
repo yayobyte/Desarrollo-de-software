@@ -161,10 +161,8 @@
     <Content Include="BaseDatos\Servicio.aspx" />
     <Content Include="Boleto\Boleto.aspx" />
     <Content Include="Boleto\Evento.aspx" />
+    <Content Include="Boleto\ProveedorPorEvento.aspx" />
     <Content Include="Boleto\VentaProveedor.aspx" />
-    <Content Include="ClasesBasicas\Editorial.aspx" />
-    <Content Include="ClasesBasicas\Taller.aspx" />
-    <Content Include="ClasesBasicas\Inscripcion.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -190,8 +188,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="ReglasNeglocio\TiendaDeportiva.aspx" />
-    <Content Include="ReglasNeglocio\Minutos_Celular.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -326,33 +322,19 @@
     <Compile Include="Boleto\Evento.aspx.designer.cs">
       <DependentUpon>Evento.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Boleto\ProveedorPorEvento.aspx.cs">
+      <DependentUpon>ProveedorPorEvento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Boleto\ProveedorPorEvento.aspx.designer.cs">
+      <DependentUpon>ProveedorPorEvento.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Boleto\VentaProveedor.aspx.cs">
       <DependentUpon>VentaProveedor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Boleto\VentaProveedor.aspx.designer.cs">
       <DependentUpon>VentaProveedor.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ClasesBasicas\Editorial.aspx.cs">
-      <DependentUpon>Editorial.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ClasesBasicas\Editorial.aspx.designer.cs">
-      <DependentUpon>Editorial.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ClasesBasicas\Taller.aspx.cs">
-      <DependentUpon>Taller.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ClasesBasicas\Taller.aspx.designer.cs">
-      <DependentUpon>Taller.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ClasesBasicas\Inscripcion.aspx.cs">
-      <DependentUpon>Inscripcion.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ClasesBasicas\Inscripcion.aspx.designer.cs">
-      <DependentUpon>Inscripcion.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -373,20 +355,6 @@
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReglasNeglocio\TiendaDeportiva.aspx.cs">
-      <DependentUpon>TiendaDeportiva.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ReglasNeglocio\TiendaDeportiva.aspx.designer.cs">
-      <DependentUpon>TiendaDeportiva.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ReglasNeglocio\Minutos_Celular.aspx.cs">
-      <DependentUpon>Minutos_Celular.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ReglasNeglocio\Minutos_Celular.aspx.designer.cs">
-      <DependentUpon>Minutos_Celular.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

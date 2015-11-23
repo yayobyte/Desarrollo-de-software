@@ -68,6 +68,7 @@
     <Compile Include="Eventos\clsTipoBoleto.cs" />
     <Compile Include="Eventos\clsTipoEvento.cs" />
     <Compile Include="Eventos\clsTipoProveedor.cs" />
+    <Compile Include="Eventos\clsProveedorPorEvento.cs" />
     <Compile Include="Eventos\clsVentaProveedor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reglas_Negocio\clsRN_DescuentoVenta.cs" />
