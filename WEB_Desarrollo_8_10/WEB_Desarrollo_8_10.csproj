@@ -160,6 +160,7 @@
     <Content Include="BaseDatos\Operador.aspx" />
     <Content Include="BaseDatos\Servicio.aspx" />
     <Content Include="Boleto\Boleto.aspx" />
+    <Content Include="Boleto\Evento.aspx" />
     <Content Include="ClasesBasicas\Editorial.aspx" />
     <Content Include="ClasesBasicas\Taller.aspx" />
     <Content Include="ClasesBasicas\Inscripcion.aspx" />
@@ -316,6 +317,13 @@
     </Compile>
     <Compile Include="Boleto\Boleto.aspx.designer.cs">
       <DependentUpon>Boleto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Boleto\Evento.aspx.cs">
+      <DependentUpon>Evento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Boleto\Evento.aspx.designer.cs">
+      <DependentUpon>Evento.aspx</DependentUpon>
     </Compile>
     <Compile Include="ClasesBasicas\Editorial.aspx.cs">
       <DependentUpon>Editorial.aspx</DependentUpon>

@@ -99,63 +99,6 @@ namespace WEB_Desarrollo_8_10.Boleto
             oBoleto = null;
             
         }
-        
-        protected void btnActualizar_Click(object sender, EventArgs e)
-        {
-            /*
-            string sNombre;
-            Int32 iValor, iCodigoTipoServicio, iCodigo;
-            bool bActivo;
-
-            iCodigo = Convert.ToInt32(txtCodigo.Text);
-            sNombre = txtNombre.Text;
-            iValor = Convert.ToInt32(txtValor.Text);
-            bActivo = chkActivo.Checked;
-            iCodigoTipoServicio = Convert.ToInt32(cboTipoServicio.SelectedValue);
-
-            clsServicio oServicio = new clsServicio();
-
-            oServicio.Codigo = iCodigo;
-            oServicio.Nombre = sNombre;
-            oServicio.Valor = iValor;
-            oServicio.Activo = bActivo;
-            oServicio.CodigoTipoServicio = iCodigoTipoServicio;
-
-            if (oServicio.Actualizar())
-            {
-                //Llenar grid
-                LlenarGrid();
-            }
-            else
-            {
-                lblError.Text = oServicio.Error;
-            }
-            oServicio = null;
-             * */
-        }
-
-        protected void btnBorrar_Click(object sender, EventArgs e)
-        {
-            /*
-            Int32 iCodigo;
-
-            iCodigo = Convert.ToInt32(txtCodigo.Text);
-            clsServicio oServicio = new clsServicio();
-
-            oServicio.Codigo = iCodigo;
-
-            if (oServicio.Borrar())
-            {
-                //Llenar grid
-                LlenarGrid();
-            }
-            else
-            {
-                lblError.Text = oServicio.Error;
-            }
-            oServicio = null;
-             * */
-        }
 
         protected void btnConsultar_Click(object sender, EventArgs e)
         {
@@ -169,6 +112,10 @@ namespace WEB_Desarrollo_8_10.Boleto
             }
             oBoleto = null;
         }
+
+        
+
+        
          
     }
 }

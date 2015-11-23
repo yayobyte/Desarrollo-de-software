@@ -155,7 +155,7 @@ namespace libDesarrollo_8_10.Eventos
                 sError = "No definió el grid del Boleto";
                 return false;
             }
-            sSQL = "Execute Boleto_Consultar "+iIdCliente;
+            sSQL = "Execute tblBoleto_Consultar "+iIdCliente;
 
             clsGrid oGrid = new clsGrid();
             //Se pasa el grid vacío
